@@ -19,6 +19,7 @@ function App() {
         setUsers(data.users);
       } catch (error) {
         console.error('Error fetching user data:', error);
+        alert('Error fetching user data:', error)
       }
     };
 
@@ -42,6 +43,7 @@ function App() {
       setSearchResults(data.users);
     } catch (error) {
       console.error('Error searching for users:', error);
+      alert("'Error searching for users:', error")
     }
   };
 
