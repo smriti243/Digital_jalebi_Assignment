@@ -1,0 +1,60 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;  
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease;
+    height: 70px;
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 45px;
+    border-radius: 20px;
+}
+
+
+  
+  .Header.dark {
+    background-color: #2a2b2e; /* Dark theme background */
+  }
+  
+  .ThemeToggle {
+    background-color: #ffffff;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    width: 80px; 
+    height: 40px;
+    border-radius: 50px; 
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Circle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    background-color: #2a2b2e; 
+    transition: transform 0.3s ease;
+  }
+  
+  .ThemeToggle.dark .Circle {
+    right: 5px; 
+    background-color: #f5f5f5;
+  }
+  
+  .ThemeToggle.light .Circle {
+    left: 5px; 
+  }
+  
+  .heading {
+    color: #3acc73; 
+  }
+  .ThemeToggle.dark{
+    background-color: #2a2b2e;
+    border: 1px #ffffff solid;
+  }

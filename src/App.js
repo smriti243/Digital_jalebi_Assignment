@@ -65,7 +65,7 @@ function App() {
     event.preventDefault(); // Prevent default form submission behavior
 
     try {
-      const response = await fetch(https://dummyjson.com/users/search?q=${searchQuery});
+      const response = await fetch('https://dummyjson.com/users/search?q=${searchQuery}');
       const data = await response.json();
       setSearchResults(data.users);
     } catch (error) {
@@ -74,7 +74,8 @@ function App() {
   };
 
   return (
-    <div className={App ${isDarkTheme ? 'dark' : 'light'}}>
+    <div className={`App ${isDarkTheme ? 'dark' : 'light'}`}>
+
     <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       
       {/* Search form */}
